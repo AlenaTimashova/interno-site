@@ -212,8 +212,8 @@
         <ul class="articles__item-box">
           <li
             class="articles__item"
-            v-for="(article, index) in articles"
-            :key="index"
+            v-for="article in topArticles"
+            :key="article.id"
           >
             <a href="#">
               <figure class="card">

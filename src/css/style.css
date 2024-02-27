@@ -105,7 +105,6 @@ img {
   font-size: 50px;
   line-height: 125%;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #292f36;
 }
 .projects__subtitle {
@@ -215,9 +214,13 @@ img {
   font-size: 50px;
   line-height: 125%;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #292f36;
   margin-bottom: 12px;
+  text-align: center;
+}
+.articles__title_blog {
+  text-align: start;
+  margin-bottom: 30px;
 }
 .articles__subtitle {
   font-family: "Jost", sans-serif;
@@ -231,7 +234,8 @@ img {
 }
 .articles__item-box {
   display: flex;
-  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap;
 }
 .articles__item {
   border: 1px solid #e7e7e7;
@@ -239,6 +243,7 @@ img {
   padding: 21px;
   padding-bottom: 48px;
   box-shadow: 0 10px 30px 0 rgba(255, 255, 255, 0.25);
+  max-width: 382px;
 }
 .articles__item:hover {
   box-shadow: 0 10px 30px 0 rgba(255, 255, 255, 0.25);
@@ -264,6 +269,10 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.articles_blog {
+  margin-bottom: 362px;
+  margin-left: 474px;
 }
 
 .footer {
@@ -310,4 +319,81 @@ img {
   display: flex;
   flex-direction: column;
   gap: 25px;
+}
+
+.banner {
+  margin-bottom: 38px;
+}
+.banner__content {
+  position: relative;
+  border-radius: 37px 37px 0 0;
+  padding: 41px 78px;
+  max-width: 530px;
+  background-color: #fff;
+  margin: -180px auto 0;
+}
+.banner__heading {
+  font-family: "DM Serif Display", sans-seri;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: #292f36;
+}
+
+.latest-post {
+  margin-bottom: 150px;
+  margin-left: 474px;
+}
+.latest-post__heading {
+  font-family: "DM Serif Display", sans-seri;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: #292f36;
+  margin-bottom: 27px;
+}
+.latest-post__card {
+  display: flex;
+  border: 1px solid #e7e7e7;
+  border-radius: 62px;
+  padding: 22px;
+  max-width: 1197px;
+  box-shadow: 0 10px 30px 0 rgba(255, 255, 255, 0.25);
+}
+.latest-post__img {
+  border-radius: 50px;
+  max-width: 569px;
+}
+.latest-post__card-title {
+  margin-bottom: 22px;
+}
+.latest-post__desc-box {
+  padding: 50px;
+}
+.latest-post__text {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #4d5053;
+  margin-bottom: 40px;
+}
+
+.breadcrums {
+  text-align: center;
+}
+.breadcrums__link {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #4d5053;
+}
+.breadcrums__link:not(:last-child)::after {
+  content: "/";
+  margin-left: 5px;
 }/*# sourceMappingURL=style.css.map */
