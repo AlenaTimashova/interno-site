@@ -4,7 +4,6 @@ $fontFamilyMain: "Jost", sans-serif
 $secondFontFamily: "DM Serif Display", sans-seri
 $thirdFontFamily: "Font Awesome 5 Brands", sans-serif
 $sectionGap: 96px
-$blogMarginLeft: 474px
 
 @mixin sectionHeading()
     font-family: $secondFontFamily
@@ -230,7 +229,6 @@ img
         align-items: center
     &_blog
         margin-bottom: 362px
-        margin-left: $blogMarginLeft
 
 .footer
     margin-bottom: 134px
@@ -286,7 +284,7 @@ img
         @include sectionHeading()
 .latest-post
     margin-bottom: 150px
-    margin-left: $blogMarginLeft
+
     &__heading
         @include sectionHeading()
         margin-bottom: 27px

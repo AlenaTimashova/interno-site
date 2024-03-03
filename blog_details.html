@@ -36,7 +36,9 @@
     <section class="banner">
       <img src="src/img/blog_details_banner.png" alt="banner" />
     </section>
-    <section class="blog-details container"></section>
+    <section class="blog-details container" id="app">
+      <blogdetail></blogdetail>
+    </section>
     <footer class="footer container">
       <div class="footer__logos">
         <a class="logo footer__logo" href="index.html">
@@ -96,5 +98,14 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script/articles.js"></script>
+    <script>
+      const app = Vue.createApp({
+        components: {
+          blogdetail,
+        },
+      }).mount("#app");
+    </script>
   </body>
 </html>
