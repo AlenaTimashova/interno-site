@@ -91,20 +91,24 @@ const blogdetail = {
   },
 
   template: `
-  <div v-for="article in filteredArticles" :key="article.id">
-  <h2 class="articles__header">{{article.title}}</h2>
-  <img :src="article.img" alt="img" />
-  <div class="articles__desc">
+  <div class="articles_filtered">
+  <div v-for="article in filteredArticles" :key="article.id" class="articles__filtered-article"> 
+  <h2 class="articles__title articles__title_blog">{{article.title}}</h2>
+  <img class="articles__img" :src="article.img" alt="img" />
+  <div class="articles__desc articles__desc_filtered">
     <p class="card__info">{{article.date}}</p>
-    <p class="articles__breadcrumbs">Interior / Home / Decore</p>
+    <p class="card__info">Interior / Home / Decore</p>
   </div>
-  <div class="articles__desc">
-    <p class="articles__text">{{article.text}}</p>
-    
+    <div class="articles__desc">
+        <p class="card__info articles__text">{{article.text}}</p>
+    </div>
   </div>
 </div>
-<div class="tags" v-for="(tag, index) in tags" :key="index">
-  <button @click="showArticles(tag)">{{tag}} </button>
+<div class="tags" >
+<h3 class="tags__title">Tags</h3>
+  <div class="tags__buttons">
+  <button class="tags__button" v-for="(tag, index) in tags" :key="index" @click="showArticles(tag)">{{tag}} </button>
+  </div>
 </div>
       `,
 };

@@ -227,8 +227,20 @@ img
         display: flex
         justify-content: space-between
         align-items: center
+        &_filtered
+            margin-bottom: 48px
+    &__img
+        border-radius: 50px
+        margin-bottom: 46px
+        height: 539px
+    &__text
+        font-size: 22px
     &_blog
         margin-bottom: 362px
+    &_filtered
+        width: 70%
+    &__filtered-article
+        margin-bottom: 35px
 
 .footer
     margin-bottom: 134px
@@ -273,6 +285,8 @@ img
 
 .banner
     margin-bottom: 38px
+    &_details
+        margin-bottom: 200px
     &__content
         position: relative
         border-radius: 37px 37px 0 0
@@ -323,3 +337,35 @@ img
         &:not(:last-child)::after
             content: '/'
             margin-left: 5px
+
+.blog-details
+    display: flex
+    justify-content: space-between
+
+.tags
+    width: 25%
+    &__title
+        font-family: $secondFontFamily
+        font-weight: 400
+        font-size: 25px
+        line-height: 125%
+        letter-spacing: 0.02em
+        color: $textColor
+        margin-bottom: 20px
+    &__buttons
+        display: flex
+        flex-wrap: wrap
+        gap: 10px
+    &__button
+        border-radius: 10px
+        padding: 9px 30px
+        background: #f4f0ec
+        border: none
+        font-family: $fontFamilyMain
+        font-weight: 400
+        font-size: 18px
+        line-height: 125%
+        letter-spacing: 0.02em
+        text-align: center
+        color: $subtextColor
+        cursor: pointer
