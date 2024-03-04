@@ -71,14 +71,6 @@ const blogdetail = {
         { text: "Architecture", active: false },
         { text: "Kitchen Planning", active: false },
       ],
-
-      // tags: [
-      //   "Kitchen",
-      //   "Bedroom",
-      //   "Building",
-      //   "Architecture",
-      //   "Kitchen Planning",
-      // ],
     };
   },
   methods: {
