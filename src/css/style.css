@@ -441,7 +441,7 @@ img {
 .tags__button {
   border-radius: 10px;
   padding: 9px 30px;
-  background: #f4f0ec;
+  background-color: #f4f0ec;
   border: none;
   font-family: "Jost", sans-serif;
   font-weight: 400;
@@ -451,4 +451,10 @@ img {
   text-align: center;
   color: #4d5053;
   cursor: pointer;
+}
+
+.active {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #292f36;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

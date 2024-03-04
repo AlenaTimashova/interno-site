@@ -65,22 +65,37 @@ const blogdetail = {
       ],
 
       tags: [
-        "Kitchen",
-        "Bedroom",
-        "Building",
-        "Architecture",
-        "Kitchen Planning",
+        { text: "Kitchen", active: true },
+        { text: "Bedroom", active: false },
+        { text: "Building", active: false },
+        { text: "Architecture", active: false },
+        { text: "Kitchen Planning", active: false },
       ],
+
+      // tags: [
+      //   "Kitchen",
+      //   "Bedroom",
+      //   "Building",
+      //   "Architecture",
+      //   "Kitchen Planning",
+      // ],
     };
   },
   methods: {
-    showArticles(tag) {
+    showArticles(tag, $event) {
       this.articles.forEach((article) => {
         article.tag.active = false;
         if (article.tag.title.toLowerCase() === tag.toLowerCase()) {
           article.tag.active = true;
         }
+        this.makeActiveBtn($event);
       });
+    },
+
+    makeActiveBtn($event) {
+      const btns = document.querySelectorAll(".tags__button");
+      btns.forEach((btn) => btn.classList.remove("active"));
+      $event.target.classList.add("active");
     },
   },
 
@@ -107,7 +122,7 @@ const blogdetail = {
 <div class="tags" >
 <h3 class="tags__title">Tags</h3>
   <div class="tags__buttons">
-  <button class="tags__button" v-for="(tag, index) in tags" :key="index" @click="showArticles(tag)">{{tag}} </button>
+  <button class="tags__button" :class="{active:tag.active}" v-for="(tag, index) in tags" :key="index" @click="showArticles(tag.text, $event)">{{tag.text}} </button>
   </div>
 </div>
       `,
