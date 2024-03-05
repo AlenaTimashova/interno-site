@@ -1,26 +1,35 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
   <HeaderComponent />
+  <IndexPageComponent />
+  <FooterComponent />
+
+  <HeaderComponent />
+  <BlogPageComponent />
+  <FooterComponent />
+
+  <HeaderComponent />
+  <BlogDetailsPageComponent />
+  <FooterComponent />
 </template>
 
 <script>
 import HeaderComponent from "./components/HeaderComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
+import IndexPageComponent from "./components/pages/IndexPageComponent.vue";
+import BlogPageComponent from "./components/pages/BlogPageComponent.vue";
+import BlogDetailsPageComponent from "./components/pages/BlogDetailsPageComponent.vue";
 
 export default {
   name: "App",
   components: {
     HeaderComponent,
+    FooterComponent,
+    IndexPageComponent,
+    BlogPageComponent,
+    BlogDetailsPageComponent,
   },
 };
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style lang="sass"></style>
+./components/pages/IndexPageComponent.vue

@@ -47,7 +47,7 @@ img {
 }
 
 .hero {
-  background-image: url("/src/img/hero_bg.png");
+  background-image: url("@/assets/img/hero_bg.png");
   background-repeat: no-repeat;
   background-position: cover;
   border-radius: 70px;

@@ -1,7 +1,7 @@
 <template>
   <header class="header container">
     <a class="logo header__logo" href="index.html">
-      <img class="logo-img" src="src/img/logo.jpg" alt="logo" />
+      <img class="logo-img" src="@/assets/img/logo.jpg" alt="logo" />
     </a>
     <nav class="header__nav">
       <ul class="header__nav-list nav-list">
@@ -23,4 +23,4 @@
 export default {};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="sass" scoped></style>

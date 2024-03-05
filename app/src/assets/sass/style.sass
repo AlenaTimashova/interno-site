@@ -1,0 +1,376 @@
+$textColor: #292f36
+$subtextColor: #4d5053
+$fontFamilyMain: "Jost", sans-serif
+$secondFontFamily: "DM Serif Display", sans-seri
+$thirdFontFamily: "Font Awesome 5 Brands", sans-serif
+$sectionGap: 96px
+
+@mixin sectionHeading()
+    font-family: $secondFontFamily
+    font-weight: 400
+    font-size: 50px
+    line-height: 125%
+    letter-spacing: 0.02em
+
+    color: $textColor
+
+@mixin sectionSubtitle()
+    font-family: $fontFamilyMain
+    font-weight: 400
+    font-size: 22px
+    line-height: 150%
+    letter-spacing: 0.01em
+    text-align: center
+    color: $subtextColor
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+ul
+    list-style-type: none
+
+a
+    text-decoration: none
+
+img
+    width: 100%
+
+.container
+    max-width: 1220px
+    margin: 0 auto
+    padding: 0 10px
+.header
+    display: flex
+    justify-content: space-between
+    padding: 50px 0 // уточнить паддинг
+.nav-list
+    display: flex
+    gap: 30px
+
+.nav-link
+    font-family: $fontFamilyMain
+    font-weight: 400
+    font-size: 20px
+    line-height: 125%
+    text-align: center
+    color: $textColor
+
+.logo-img
+    width: 177px
+
+.hero
+    background-image: url("@/assets/img/hero_bg.png")
+    background-repeat: no-repeat
+    background-position: cover
+    border-radius: 70px
+    padding: 210px 50px
+    margin-bottom: $sectionGap
+    &__content
+        max-width: 434px
+        display: flex
+        flex-direction: column
+        gap: 20px
+    &__heading
+        font-family: $secondFontFamily
+        font-weight: 400
+        font-size: 65px
+        line-height: 125%
+        color: $textColor
+
+    &__subtitle
+        font-family: $fontFamilyMain
+        font-weight: 400
+        font-size: 22px
+        line-height: 150%
+        letter-spacing: 0.01em
+        color: $subtextColor
+
+    &__btn
+        display: flex
+        gap: 10px
+        align-items: center
+        align-self: baseline
+        font-family: $fontFamilyMain
+        font-weight: 600
+        font-size: 18px
+        line-height: 125%
+        letter-spacing: 0.02em
+        color: #fff
+        background-color: $textColor
+        padding: 1rem 2rem
+        border-radius: 18px
+        box-shadow: 0 10px 20px 0 rgba(192, 192, 192, 0.35)
+.projects
+    margin-bottom: $sectionGap
+    &__heading
+        max-width: 760px
+        margin: 0 auto 93px
+    &__title
+        @include sectionHeading()
+    &__subtitle
+        @include sectionSubtitle()
+    &__cards
+        display: flex
+        gap: 104px
+        flex-wrap: wrap
+    &__card
+        max-width: 43%
+
+.card
+    position: relative
+    &__img
+        margin-bottom: 24px
+    &__desc-box
+        display: flex
+        justify-content: space-between
+    &__title
+        font-family: $secondFontFamily
+        font-weight: 400
+        font-size: 25px
+        line-height: 125%
+        letter-spacing: 0.02em
+        color: $textColor
+    &__subtitle
+        font-family: $fontFamilyMain
+        font-weight: 400
+        font-size: 22px
+        line-height: 150%
+        letter-spacing: 0.01em
+        color: $subtextColor
+    &__info
+        font-family: $fontFamilyMain
+        font-weight: 400
+        font-size: 16px
+        line-height: 150%
+        letter-spacing: 0.01em
+        text-transform: capitalize
+        color: $subtextColor
+
+.counter
+    margin-bottom: $sectionGap
+    background-color: #f4f0ec
+    padding-top: 151px
+    padding-bottom: 151px
+    &__list
+        display: flex
+        justify-content: space-around
+    &__list-item
+        position: relative
+        &:not(:last-child)::after
+            content: ''
+            display: block
+            position: absolute
+            top: 18px
+            right: -54px
+            width: 1px
+            height: 130px
+            background-color: #cda274
+    &__item-count
+        font-family: $secondFontFamily
+        font-weight: 400
+        font-size: 85px
+        line-height: 125%
+        letter-spacing: 0.02em
+        color: #cda274
+    &__item-desc
+        font-family: $fontFamilyMain
+        font-weight: 400
+        font-size: 22px
+        line-height: 150%
+        letter-spacing: 0.01em
+        color: $subtextColor
+.articles
+    margin-bottom: $sectionGap
+    &__heading
+        max-width: 850px
+        margin: 0 auto
+    &__title
+        @include sectionHeading()
+        margin-bottom: 12px
+        text-align: center
+        &_blog
+            text-align: start
+            margin-bottom: 30px
+    &__subtitle
+        @include sectionSubtitle()
+        margin-bottom: 52px
+    &__item-box
+        display: flex
+        gap: 25px
+        flex-wrap: wrap
+    &__item
+        border: 1px solid #e7e7e7
+        border-radius: 62px
+        padding: 21px
+        padding-bottom: 48px
+        box-shadow: 0 10px 30px 0 rgba(255, 255, 255, 0.25)
+        max-width: 382px
+        &:hover
+            box-shadow: 0 10px 30px 0 rgba(255, 255, 255, 0.25)
+            background: #f4f0ec
+        &:hover>a figure figcaption svg circle
+            fill: #fff
+    &__item-title
+        margin-bottom: 30px
+        max-width: 289px
+    &__die
+        position: absolute
+        top: 227px
+        left: 24px
+        z-index: 2
+        border-radius: 8px 8px 8px 0
+        padding: .5rem 1rem
+        background-color: #fff
+    &__desc
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &_filtered
+            margin-bottom: 48px
+    &__img
+        border-radius: 50px
+        margin-bottom: 46px
+        height: 539px
+    &__text
+        font-size: 22px
+    &_blog
+        margin-bottom: 362px
+    &_filtered
+        width: 70%
+    &__filtered-article
+        margin-bottom: 35px
+
+.footer
+    margin-bottom: 134px
+    display: flex
+    justify-content: space-between
+    &__logo-img
+        margin-bottom: 18px
+    &__logos-text
+        font-family: $fontFamilyMain
+        font-weight: 400
+        font-size: 22px
+        line-height: 150%
+        letter-spacing: 0.01em
+        color: $subtextColor
+        max-width: 400px
+        margin-bottom: 31px
+    &__icon
+        margin-right: 54px
+        width: 18px
+    &__nav-list
+        flex-direction: column
+    &__title
+        font-family: $secondFontFamily
+        font-weight: 400
+        font-size: 25px
+        line-height: 125%
+        color: $textColor
+        margin-bottom: 26px
+    &__contact-info
+        font-family: $fontFamilyMain
+        font-weight: 400
+        font-size: 22px
+        line-height: 150%
+        letter-spacing: 0.01em
+        color: $subtextColor
+        max-width: 274px
+        display: flex
+        flex-direction: column
+        gap: 25px
+
+    // blog styles
+
+.banner
+    margin-bottom: 38px
+    &_details
+        margin-bottom: 200px
+    &__content
+        position: relative
+        border-radius: 37px 37px 0 0
+        padding: 41px 78px
+        max-width: 530px
+        background-color: #fff
+        margin: -180px auto 0
+    &__heading
+        @include sectionHeading()
+.latest-post
+    margin-bottom: 150px
+
+    &__heading
+        @include sectionHeading()
+        margin-bottom: 27px
+    &__card
+        display: flex
+        border: 1px solid #e7e7e7
+        border-radius: 62px
+        padding: 22px
+        max-width: 1197px
+        box-shadow: 0 10px 30px 0 rgba(255, 255, 255, 0.25)
+    &__img
+        border-radius: 50px
+        max-width: 569px
+    &__card-title
+        margin-bottom: 22px
+    &__desc-box
+        padding: 50px
+    &__text
+        font-family: $fontFamilyMain
+        font-weight: 400
+        font-size: 22px
+        line-height: 150%
+        letter-spacing: 0.01em
+        color: $subtextColor
+        margin-bottom: 40px
+
+.breadcrums
+    text-align: center
+    &__link
+        font-family: $fontFamilyMain
+        font-weight: 400
+        font-size: 22px
+        line-height: 150%
+        letter-spacing: 0.01em
+        color: $subtextColor
+        &:not(:last-child)::after
+            content: '/'
+            margin-left: 5px
+
+.blog-details
+    display: flex
+    justify-content: space-between
+
+.tags
+    width: 25%
+    &__title
+        font-family: $secondFontFamily
+        font-weight: 400
+        font-size: 25px
+        line-height: 125%
+        letter-spacing: 0.02em
+        color: $textColor
+        margin-bottom: 20px
+    &__buttons
+        display: flex
+        flex-wrap: wrap
+        gap: 10px
+    &__button
+        border-radius: 10px
+        padding: 9px 30px
+        background-color: #f4f0ec
+        border: none
+        font-family: $fontFamilyMain
+        font-weight: 400
+        font-size: 18px
+        line-height: 125%
+        letter-spacing: 0.02em
+        text-align: center
+        color: $subtextColor
+        cursor: pointer
+
+.active
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25)
+    background-color: #292f36
+    color: #fff
