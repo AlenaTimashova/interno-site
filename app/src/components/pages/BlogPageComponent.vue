@@ -57,17 +57,17 @@
     <h2 class="articles__title articles__title_blog">
       Articles &amp;&nbsp;News
     </h2>
-    <ArticleComponent />
+    <ArticlesListComponent />
   </section>
 </template>
 
 <script>
-import ArticleComponent from "../ArticleComponent.vue";
+import ArticlesListComponent from "../ArticlesListComponent.vue";
 
 export default {
   name: "BlogPageComponent",
   components: {
-    ArticleComponent,
+    ArticlesListComponent,
   },
 };
 </script>

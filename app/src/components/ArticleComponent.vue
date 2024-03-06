@@ -40,6 +40,9 @@
 
 <script>
 export default {
+  props: {
+    article: Object,
+  },
   data() {
     return {
       articles: [
@@ -94,6 +97,7 @@ export default {
       ],
     };
   },
+
   computed: {
     topArticles: function () {
       return this.articles.filter((article) => article.top);
