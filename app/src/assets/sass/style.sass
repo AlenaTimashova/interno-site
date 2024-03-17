@@ -375,3 +375,36 @@ img
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25)
     background-color: #292f36
     color: #fff
+
+// Project page
+.project
+    &__buttons-box
+        border: 1px solid #cda274
+        border-radius: 18px
+        margin: 0 auto 61px
+        max-width: 845px
+
+    &__button
+        font-family: $fontFamilyMain
+        font-weight: 600
+        font-size: 18px
+        text-align: center
+        color: $textColor
+        border-radius: 18px
+        padding: 26px 66px
+        border: none
+        outline: none
+        background-color: #fff
+        &:hover
+            background-color: #cda274
+            color: #fff
+
+    &__chosen
+        background-color: #cda274
+        color: #fff
+    &__item-list
+        display: grid
+        grid-template-columns: (1fr 1fr)
+        grid-gap: 30px
+    &__item
+        // max-width: 585px
