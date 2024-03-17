@@ -1,7 +1,7 @@
 $textColor: #292f36
 $subtextColor: #4d5053
 $fontFamilyMain: "Jost", sans-serif
-$secondFontFamily: "DM Serif Display", sans-seri
+$secondFontFamily: "DM Serif Display", sans-serif
 $thirdFontFamily: "Font Awesome 5 Brands", sans-serif
 $sectionGap: 96px
 
@@ -409,3 +409,33 @@ img
         grid-gap: 30px
     &__item
         // max-width: 585px
+
+//project-details
+
+.project-details
+    margin-bottom: 100px
+    &__title
+        @include sectionHeading()
+        text-align: center
+
+    &__text
+        @include sectionSubtitle()
+        text-align: unset
+        max-width: 658px
+        margin: 0 auto 30px
+    &__swiper
+        border-radius: 70px
+
+.slider
+    margin-bottom: 200px
+
+.swiper-pagination-bullet
+    width: 20px
+    height: 20px
+    border: 2px solid black
+    opacity: 1
+    background: #fff
+
+.swiper-pagination
+    position: unset
+    padding: 30px

@@ -2,7 +2,74 @@ import { createStore } from "vuex";
 
 export default createStore({
   state: {
+    project_details: {
+      id: 1,
+      title: "Minimal Look Bedrooms",
+      text: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo.",
+        "In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.",
+      ],
+    },
+
     projects: [
+      {
+        id: 1,
+        title: "Minimal Bedroom",
+        subtitle: "Decor / Artchitecture",
+        img: require("@/assets/img/project5.png"),
+        room: { title: "Bathroom", active: true },
+      },
+      {
+        id: 2,
+        title: "Classic Minimal Bedroom",
+        subtitle: "Decor / Artchitecture",
+        img: require("@/assets/img/project6.png"),
+        room: { title: "Bed Room", active: false },
+      },
+      {
+        id: 3,
+        title: "Minimal Bedroom",
+        subtitle: "Decor / Artchitecture",
+        img: require("@/assets/img/project7.png"),
+        room: { title: "Living Area", active: false },
+      },
+      {
+        id: 4,
+        title: "Minimal Bedroom table",
+        subtitle: "Decor / Artchitecture",
+        img: require("@/assets/img/project8.png"),
+        room: { title: "Bed Room", active: false },
+      },
+      {
+        id: 5,
+        title: "Modern Medroom",
+        subtitle: "Decor / Artchitecture",
+        img: require("@/assets/img/project9.png"),
+        room: { title: "Bed Room", active: false },
+      },
+      {
+        id: 6,
+        title: "System Table",
+        subtitle: "Decor / Artchitecture",
+        img: require("@/assets/img/project10.png"),
+        room: { title: "Kitchan", active: false },
+      },
+      {
+        id: 7,
+        title: "Minimal Bedroom",
+        subtitle: "Decor / Artchitecture",
+        img: require("@/assets/img/project11.png"),
+        room: { title: "Living Area", active: false },
+      },
+      {
+        id: 8,
+        title: "Minimal Bedroom",
+        subtitle: "Decor / Artchitecture",
+        img: require("@/assets/img/project12.png"),
+        room: { title: "Kitchan", active: false },
+      },
+    ],
+    articles: [
       {
         id: 1,
         title: "Let’s Get Solution For Building Construction Work",

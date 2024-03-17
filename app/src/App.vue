@@ -12,6 +12,10 @@
   <FooterComponent />
 
   <ProjectsPageComponent />
+
+  <HeaderComponent />
+  <ProjectDetailsPage />
+  <FooterComponent />
 </template>
 
 <script>
@@ -21,6 +25,7 @@ import IndexPageComponent from "./components/pages/IndexPageComponent.vue";
 import BlogPageComponent from "./components/pages/BlogPageComponent.vue";
 import BlogDetailsPageComponent from "./components/pages/BlogDetailsPageComponent.vue";
 import ProjectsPageComponent from "./components/pages/ProjectsPageComponent.vue";
+import ProjectDetailsPage from "./components/pages/ProjectDetailsPage.vue";
 
 export default {
   name: "App",
@@ -31,6 +36,7 @@ export default {
     BlogPageComponent,
     BlogDetailsPageComponent,
     ProjectsPageComponent,
+    ProjectDetailsPage,
   },
 };
 </script>
