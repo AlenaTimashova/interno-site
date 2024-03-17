@@ -10,6 +10,8 @@
   <HeaderComponent />
   <BlogDetailsPageComponent />
   <FooterComponent />
+
+  <ProjectsPageComponent />
 </template>
 
 <script>
@@ -18,6 +20,7 @@ import FooterComponent from "./components/FooterComponent.vue";
 import IndexPageComponent from "./components/pages/IndexPageComponent.vue";
 import BlogPageComponent from "./components/pages/BlogPageComponent.vue";
 import BlogDetailsPageComponent from "./components/pages/BlogDetailsPageComponent.vue";
+import ProjectsPageComponent from "./components/pages/ProjectsPageComponent.vue";
 
 export default {
   name: "App",
@@ -27,6 +30,7 @@ export default {
     IndexPageComponent,
     BlogPageComponent,
     BlogDetailsPageComponent,
+    ProjectsPageComponent,
   },
 };
 </script>
