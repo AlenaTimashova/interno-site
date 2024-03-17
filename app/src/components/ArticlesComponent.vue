@@ -16,7 +16,7 @@
       </div>
     </div>
   </div>
-  <div class="tags">
+  <aside class="tags">
     <h3 class="tags__title">Tags</h3>
     <div class="tags__buttons">
       <button
@@ -29,7 +29,7 @@
         {{ tag.text }}
       </button>
     </div>
-  </div>
+  </aside>
 </template>
 
 <script>
