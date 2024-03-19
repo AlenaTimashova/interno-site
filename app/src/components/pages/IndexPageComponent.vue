@@ -35,9 +35,13 @@
       </h3>
     </header>
     <div class="projects__cards">
-      <a class="projects__card" href="projects.html"
-        ><figure class="card">
-          <img src="@/assets/img/project1.png" alt="card" class="card__img" />
+      <a class="projects__card" href="projects.html">
+        <figure class="card">
+          <img
+            src="@/assets/img/project1.png"
+            alt="card"
+            class="card__img project__img-first"
+          />
           <figcaption class="card__desc-box">
             <div class="card__desc">
               <h3 class="card__title">Modern Kitchan</h3>
@@ -64,7 +68,11 @@
       </a>
       <a class="projects__card" href="projects.html"
         ><figure class="card">
-          <img src="@/assets/img/project2.png" alt="card" class="card__img" />
+          <img
+            src="@/assets/img/project2.png"
+            alt="card"
+            class="card__img project__img-second"
+          />
           <figcaption class="card__desc-box">
             <div class="card__desc">
               <h3 class="card__title">Modern Kitchan</h3>
@@ -91,7 +99,11 @@
       </a>
       <a class="projects__card" href="projects.html">
         <figure class="card">
-          <img src="@/assets/img/project3.png" alt="card" class="card__img" />
+          <img
+            src="@/assets/img/project3.png"
+            alt="card"
+            class="card__img project__img-third"
+          />
           <figcaption class="card__desc-box">
             <div class="card__desc">
               <h3 class="card__title">Modern Kitchan</h3>
@@ -118,7 +130,11 @@
       </a>
       <a class="projects__card" href="projects.html"
         ><figure class="card">
-          <img src="@/assets/img/project4.png" alt="card" class="card__img" />
+          <img
+            src="@/assets/img/project4.png"
+            alt="card"
+            class="card__img project__img-fourth"
+          />
           <figcaption class="card__desc-box">
             <div class="card__desc">
               <h3 class="card__title">Modern Kitchan</h3>
