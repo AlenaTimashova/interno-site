@@ -3,17 +3,17 @@
     <img src="@/assets/img/blog_details_banner.png" alt="banner" />
   </section>
   <section class="blog-details container">
-    <ArticlesComponent />
+    <BlogDetailsArticles />
   </section>
 </template>
 
 <script>
-import ArticlesComponent from "../ArticlesComponent.vue";
+import BlogDetailsArticles from "../BlogDetailsArticles.vue";
 
 export default {
   name: "BlogDetailsPageComponent",
   components: {
-    ArticlesComponent,
+    BlogDetailsArticles,
   },
 };
 </script>
