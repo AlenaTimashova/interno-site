@@ -120,4 +120,27 @@ export default createStore({
       },
     ],
   },
+
+  getters: {
+    chosenProjects(state) {
+      return state.projects.filter((project) => project.room.active);
+    },
+  },
+
+  mutations: {
+    chooseProjects(state, room) {
+      state.projects.forEach((project) => {
+        project.room.active = false;
+        if (project.room.title.toLowerCase() === room.toLowerCase()) {
+          project.room.active = true;
+        }
+      });
+    },
+  },
+
+  actions: {
+    showProjects({ commit }, room, $event) {
+      commit("chooseProjects", room);
+    },
+  },
 });
