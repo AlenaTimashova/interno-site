@@ -13,30 +13,24 @@
     </div>
     <ul class="project__item-list">
       <ProjectCardComponent
-        v-for="project in paginatedProjects"
+        v-for="project in chosenProjects"
         :key="project.id"
         :project="project"
       />
     </ul>
-    <div class="pagination" v-if="totalPages > 1">
-      <router-link
-        v-for="pageNumber in totalPages"
-        :key="pageNumber"
-        :to="getPageLink(pageNumber)"
-      >
-        {{ pageNumber }}
-      </router-link>
-    </div>
+    <PaginationComponent />
   </section>
 </template>
 
 <script>
 import ProjectCardComponent from "./ProjectCardComponent.vue";
+import PaginationComponent from "./PaginationComponent.vue";
 import { mapGetters, mapActions } from "vuex";
 
 export default {
   components: {
     ProjectCardComponent,
+    PaginationComponent,
   },
   data() {
     return {
@@ -51,17 +45,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(["chosenProjects"]),
-
-    totalPages() {
-      return Math.ceil(this.chosenProjects.length / this.itemsPerPage);
-    },
-    paginatedProjects() {
-      const pageNumber = this.getCurrentPageNumber();
-      const startIndex = (pageNumber - 1) * this.itemsPerPage;
-      const endIndex = startIndex + this.itemsPerPage;
-      return this.chosenProjects.slice(startIndex, endIndex);
-    },
+    ...mapGetters(["chosenProjects", "total", "totalPages"]),
   },
 
   methods: {
@@ -79,8 +63,10 @@ export default {
         ? 1
         : pageNumberParam;
     },
-    getPageLink(pageNumber) {
-      return `/project/${pageNumber}`;
+
+    onPageChange(page) {
+      console.log(page);
+      this.currentPage = page;
     },
   },
 };

@@ -4,8 +4,8 @@
     <div class="banner__content">
       <h1 class="banner__heading">Our Projects</h1>
       <div class="breadcrums">
-        <a class="breadcrums__link" href="index.html">Home</a>
-        <a class="breadcrums__link" href="blog.html">Project</a>
+        <router-link class="breadcrums__link" to="/">Home</router-link>
+        <router-link class="breadcrums__link" to="/blog">Project</router-link>
       </div>
     </div>
   </section>
@@ -15,4 +15,4 @@
 export default {};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="sass" scoped></style>

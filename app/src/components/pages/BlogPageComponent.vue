@@ -59,15 +59,18 @@
     </h2>
     <ArticlesListComponent />
   </section>
+  <PaginationComponent />
 </template>
 
 <script>
 import ArticlesListComponent from "../ArticlesListComponent.vue";
+import PaginationComponent from "../PaginationComponent.vue";
 
 export default {
   name: "BlogPageComponent",
   components: {
     ArticlesListComponent,
+    PaginationComponent,
   },
 };
 </script>

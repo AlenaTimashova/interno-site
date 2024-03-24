@@ -170,6 +170,12 @@ export default createStore({
     topArticles(state) {
       return state.articles.filter((article) => article.top);
     },
+    total(state) {
+      return state.chosenProjects.length();
+    },
+    totalPages() {
+      return Math.ceil(this.chosenProjects.length / this.itemsPerPage);
+    },
   },
 
   mutations: {

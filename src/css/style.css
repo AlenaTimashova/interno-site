@@ -595,4 +595,31 @@ img {
   border-radius: 0 0 0 353px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 50px;
+}
+
+.pagination-btn {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: #292f36;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid #cda274;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #f4f0ec;
+  border: none;
 }/*# sourceMappingURL=style.css.map */
