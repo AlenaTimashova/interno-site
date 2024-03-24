@@ -1,6 +1,6 @@
 <template>
   <li class="project__item">
-    <a class="project__card" href="#"
+    <router-link class="project__card" to="/project-details"
       ><figure class="card">
         <img :src="project.img" alt="card" class="card__img" />
         <figcaption class="card__desc-box">
@@ -26,7 +26,7 @@
           </svg>
         </figcaption>
       </figure>
-    </a>
+    </router-link>
   </li>
 </template>
 

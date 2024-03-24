@@ -6,7 +6,7 @@
         There are many variations of the passages of lorem Ipsum fromavailable,
         majority.
       </p>
-      <a href="project.html" class="hero__btn">
+      <router-link to="/projects" class="hero__btn">
         Get Started
         <svg
           width="18"
@@ -23,7 +23,7 @@
             stroke-linejoin="round"
           />
         </svg>
-      </a>
+      </router-link>
     </div>
   </section>
   <section class="projects container">
@@ -35,7 +35,7 @@
       </h3>
     </header>
     <div class="projects__cards">
-      <a class="projects__card" href="projects.html">
+      <router-link class="projects__card" to="/project-details">
         <figure class="card">
           <img
             src="@/assets/img/project1.png"
@@ -65,8 +65,8 @@
             </svg>
           </figcaption>
         </figure>
-      </a>
-      <a class="projects__card" href="projects.html"
+      </router-link>
+      <router-link class="projects__card" to="/project-details"
         ><figure class="card">
           <img
             src="@/assets/img/project2.png"
@@ -96,8 +96,8 @@
             </svg>
           </figcaption>
         </figure>
-      </a>
-      <a class="projects__card" href="projects.html">
+      </router-link>
+      <router-link class="projects__card" to="/project-details">
         <figure class="card">
           <img
             src="@/assets/img/project3.png"
@@ -127,8 +127,8 @@
             </svg>
           </figcaption>
         </figure>
-      </a>
-      <a class="projects__card" href="projects.html"
+      </router-link>
+      <router-link class="projects__card" to="/project-details"
         ><figure class="card">
           <img
             src="@/assets/img/project4.png"
@@ -158,7 +158,7 @@
             </svg>
           </figcaption>
         </figure>
-      </a>
+      </router-link>
     </div>
   </section>
   <section class="counter">
@@ -193,11 +193,10 @@
     <ul class="articles__item-box">
       <li
         class="articles__item"
-        v-for="(article, index) in articles"
-        :key="index"
-        v-if="index < 4"
+        v-for="article in topArticles"
+        :key="article.id"
       >
-        <a href="#">
+        <router-link to="/blog-details">
           <figure class="card">
             <img :src="article.img" alt="card" class="articles__img" />
             <figcaption class="articles__desc-box">
@@ -229,20 +228,20 @@
               </div>
             </figcaption>
           </figure>
-        </a>
+        </router-link>
       </li>
     </ul>
   </section>
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapGetters } from "vuex";
 
 export default {
   name: "IndexPageComponent",
 
   computed: {
-    ...mapState(["articles"]),
+    ...mapGetters(["topArticles"]),
   },
 };
 </script>

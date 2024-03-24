@@ -552,4 +552,47 @@ img {
 .swiper-pagination {
   position: unset;
   padding: 30px;
+}
+
+.notFound {
+  display: flex;
+  justify-content: space-between;
+  margin: 45px 0 45px 155px;
+}
+.notFound__heading {
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: #292f36;
+  font-size: 200px;
+  color: #CDA274;
+}
+.notFound__subheading {
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: #292f36;
+  font-size: 35px;
+  margin-bottom: 23px;
+}
+.notFound__btn {
+  display: flex;
+  align-items: center;
+}
+.notFound__left {
+  display: flex;
+  flex-direction: column;
+  max-width: 42%;
+}
+.notFound__right {
+  max-width: 54%;
+}
+.notFound__img {
+  border-radius: 0 0 0 353px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */

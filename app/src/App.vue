@@ -1,20 +1,6 @@
 <template>
   <HeaderComponent />
-  <IndexPageComponent />
-  <FooterComponent />
-
-  <HeaderComponent />
-  <BlogPageComponent />
-  <FooterComponent />
-
-  <HeaderComponent />
-  <BlogDetailsPageComponent />
-  <FooterComponent />
-
-  <ProjectsPageComponent />
-
-  <HeaderComponent />
-  <ProjectDetailsPage />
+  <RouterView />
   <FooterComponent />
 </template>
 

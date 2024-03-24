@@ -1,7 +1,7 @@
 <template>
   <ul class="articles__item-box">
     <li class="articles__item" v-for="article in articles" :key="article.id">
-      <a href="#">
+      <router-link to="/blog-details">
         <figure class="card">
           <img :src="article.img" alt="card" class="articles__img" />
           <figcaption class="articles__desc-box">
@@ -33,7 +33,7 @@
             </div>
           </figcaption>
         </figure>
-      </a>
+      </router-link>
     </li>
   </ul>
 </template>

@@ -4,14 +4,14 @@
     <div class="banner__content">
       <h1 class="banner__heading">Articles &amp;&nbsp;News</h1>
       <div class="breadcrums">
-        <a class="breadcrums__link" href="index.html">Home</a>
-        <a class="breadcrums__link" href="blog.html">Blog</a>
+        <router-link class="breadcrums__link" to="/">Home</router-link>
+        <router-link class="breadcrums__link" to="/blog">Blog</router-link>
       </div>
     </div>
   </section>
   <section class="latest-post container">
     <h2 class="latest-post__heading">Latest Post</h2>
-    <a href="#">
+    <router-link to="/blog-details">
       <figure class="card latest-post__card">
         <img
           src="@/assets/img/latest_post_card.png"
@@ -51,7 +51,7 @@
           </div>
         </figcaption>
       </figure>
-    </a>
+    </router-link>
   </section>
   <section class="articles_blog container">
     <h2 class="articles__title articles__title_blog">

@@ -449,3 +449,30 @@ img
 .swiper-pagination
     position: unset
     padding: 30px
+
+// not found page
+
+.notFound
+    display: flex
+    justify-content: space-between
+    margin: 45px 0 45px 155px
+    &__heading
+        @include sectionHeading()
+        font-size: 200px
+        color: #CDA274
+    &__subheading
+        @include sectionHeading()
+        font-size: 35px
+        margin-bottom: 23px
+    &__btn
+        display: flex
+        align-items: center
+    &__left
+        display: flex
+        flex-direction: column
+        max-width: 42%
+    &__right
+        max-width: 54%
+    &__img
+        border-radius: 0 0 0 353px
+        object-fit: cover

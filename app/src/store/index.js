@@ -68,6 +68,48 @@ export default createStore({
         img: require("@/assets/img/project12.png"),
         room: { title: "Kitchan", active: false },
       },
+      {
+        id: 9,
+        title: "Minimal Bedroom",
+        subtitle: "Decor / Artchitecture",
+        img: require("@/assets/img/project11.png"),
+        room: { title: "Living Area", active: false },
+      },
+      {
+        id: 10,
+        title: "Minimal Bedroom",
+        subtitle: "Decor / Artchitecture",
+        img: require("@/assets/img/project12.png"),
+        room: { title: "Kitchan", active: false },
+      },
+      {
+        id: 11,
+        title: "Modern Medroom",
+        subtitle: "Decor / Artchitecture",
+        img: require("@/assets/img/project9.png"),
+        room: { title: "Bed Room", active: false },
+      },
+      {
+        id: 12,
+        title: "System Table",
+        subtitle: "Decor / Artchitecture",
+        img: require("@/assets/img/project10.png"),
+        room: { title: "Kitchan", active: false },
+      },
+      {
+        id: 13,
+        title: "Minimal Bedroom",
+        subtitle: "Decor / Artchitecture",
+        img: require("@/assets/img/project5.png"),
+        room: { title: "Bathroom", active: true },
+      },
+      {
+        id: 14,
+        title: "Classic Minimal Bedroom",
+        subtitle: "Decor / Artchitecture",
+        img: require("@/assets/img/project6.png"),
+        room: { title: "Bed Room", active: false },
+      },
     ],
     articles: [
       {
@@ -125,6 +167,9 @@ export default createStore({
     chosenProjects(state) {
       return state.projects.filter((project) => project.room.active);
     },
+    topArticles(state) {
+      return state.articles.filter((article) => article.top);
+    },
   },
 
   mutations: {
@@ -139,7 +184,7 @@ export default createStore({
   },
 
   actions: {
-    showProjects({ commit }, room, $event) {
+    showProjects({ commit }, room) {
       commit("chooseProjects", room);
     },
   },

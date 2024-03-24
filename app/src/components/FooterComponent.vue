@@ -1,13 +1,13 @@
 <template>
   <footer class="footer container">
     <div class="footer__logos">
-      <a class="logo footer__logo" href="index.html">
+      <router-link class="logo footer__logo" to="/">
         <img
           class="logo-img footer__logo-img"
           src="@/assets/img/logo.jpg"
           alt="logo"
         />
-      </a>
+      </router-link>
       <p class="footer__logos-text">
         It is a long established fact that a reader will be distracted lookings.
       </p>
@@ -33,15 +33,19 @@
       <nav class="footer__nav">
         <ul class="footer__nav-list nav-list">
           <li class="footer__nav-item">
-            <a class="footer__nav-link nav-link" href="index.html">Home</a>
-          </li>
-          <li class="footer__nav-item">
-            <a class="footer__nav-link nav-link" href="projects.html"
-              >Project</a
+            <router-link class="footer__nav-link nav-link" to="/"
+              >Home</router-link
             >
           </li>
           <li class="footer__nav-item">
-            <a class="footer__nav-link nav-link" href="blog.html">Blog</a>
+            <router-link class="footer__nav-link nav-link" to="/projects"
+              >Project</router-link
+            >
+          </li>
+          <li class="footer__nav-item">
+            <router-link class="footer__nav-link nav-link" to="/blog"
+              >Blog</router-link
+            >
           </li>
         </ul>
       </nav>

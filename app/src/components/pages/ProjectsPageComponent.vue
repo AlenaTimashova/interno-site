@@ -1,8 +1,6 @@
 <template>
-  <HeaderComponent />
   <BannerComponent />
   <ProjectsListComponent />
-  <FooterComponent />
 </template>
 
 <script>
